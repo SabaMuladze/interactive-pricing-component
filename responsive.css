@@ -1,0 +1,54 @@
+@media (min-width:600px) {
+    body {
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    main {
+        width: 540px;
+    }
+
+    header {
+        margin-bottom: 92px;
+        margin-top: 104px;
+    }
+
+    .start-trial-div {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+
+    .btn-purple {
+        margin: 0;
+    }
+
+    .pluses {
+        margin: 0;
+        align-items: start;
+    }
+
+    /* .orders {} */
+
+    .price-div {
+        order: 2;
+        display: inline-block !important;
+    }
+
+    .pageviews {
+        display: inline-block !important;
+        font-size: 14px;
+    }
+
+    #range {
+        order: 3;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+
+}

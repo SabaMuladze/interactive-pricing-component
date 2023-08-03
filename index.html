@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <header>
+    <h3>Simple, traffic-based pricing</h3>
+    <p class="header-p">Sign-up for our 30-day trial.
+      No credit card required. </p>
+  </header>
+  <main>
+    <div class="orders">
+      <p class="pageviews">100K PAGEVIEWS</p>
+      <div class="price-div">
+        <h1>$16.00</h1><span class="month">/ month</span>
+      </div>
+      <input onmousedown="change()" id="range" type="range" min="1" max="5" value="3">
+    </div>
+    <div class="toggle-div">
+      <p>Monthly Billing</p>
+      <div class="toggle">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="44" height="22" viewBox="0 0 44 22" fill="none">
+          <rect x="0.5" width="43" height="22" rx="11" fill="#CFD8EF" />
+          <circle cx="11.5" cy="11" r="7" fill="white" /> -->
+        <label class="label">
+          <input id="checkbox" type="checkbox">
+          <span onclick="togglefunc()" class="slider"></span>
+        </label>
+        </svg>
+      </div>
+      <p>Yearly Billing</p>
+      <span class="discount">-25%</span>
+    </div>
+    <div class="start-trial-div">
+      <div class="pluses">
+        <div><img src="images/icon-check.svg" alt="">
+          <p>Unlimited websites</p>
+        </div>
+        <div><img src="images/icon-check.svg" alt="">
+          <p>100% data ownership</p>
+        </div>
+        <div><img src="images/icon-check.svg" alt="">
+          <p>Email reports</p>
+        </div>
+      </div>
+      <button class="btn-purple">Start my trial</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
