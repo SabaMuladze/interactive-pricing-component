@@ -1,16 +1,17 @@
 @media (min-width:600px) {
     body {
-        justify-content: center;
         align-items: center;
 
     }
 
     main {
         width: 540px;
+        position: unset;
+        min-height: 400px;
     }
 
     header {
-        margin-bottom: 92px;
+        margin-bottom: 122px;
         margin-top: 104px;
     }
 
@@ -30,21 +31,41 @@
         align-items: start;
     }
 
-    /* .orders {} */
-
-    .price-div {
-        order: 2;
-        display: inline-block !important;
+    .orders {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 48px 0 46px;
+        width: 100%;
     }
 
-    .pageviews {
-        display: inline-block !important;
-        font-size: 14px;
+    .discount {
+        display: flex;
+        gap: 3px;
+    }
+
+    .toggle-div {
+        margin-left: 50px;
+    }
+
+    .discount-none {
+        display: block;
     }
 
     #range {
+        order: 0;
+        position: relative !important;
+        top: 0;
+        margin-bottom: 3.2rem;
+    }
+
+    .start-trial-div {
         order: 3;
     }
+
+    .pageviews {
+        font-size: 14px;
+    }
+
 
     h1 {
         font-size: 2.5rem;

@@ -25,8 +25,8 @@
       <div class="price-div">
         <h1>$16.00</h1><span class="month">/ month</span>
       </div>
-      <input onmousedown="change()" id="range" type="range" min="1" max="5" value="3">
     </div>
+    <input id="range" type="range" min="0" max="4" value="2">
     <div class="toggle-div">
       <p>Monthly Billing</p>
       <div class="toggle">
@@ -35,12 +35,13 @@
           <circle cx="11.5" cy="11" r="7" fill="white" /> -->
         <label class="label">
           <input id="checkbox" type="checkbox">
-          <span onclick="togglefunc()" class="slider"></span>
+          <span class="slider"></span>
         </label>
         </svg>
       </div>
       <p>Yearly Billing</p>
-      <span class="discount">-25%</span>
+      <span class="discount">-25% <span class="discount-none">discount</span></span>
+
     </div>
     <div class="start-trial-div">
       <div class="pluses">
